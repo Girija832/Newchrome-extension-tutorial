@@ -1,0 +1,48 @@
+.sms-bg {
+	background-color: #ececec;
+}
+.heading {
+	background: #d4d4d4;
+	text-align: center;
+    padding: 15px 40px;
+    position: relative;
+    font-size: 16px;
+}
+.heading:before {
+	content: '';
+	position: absolute;
+	margin-left: -25px;
+    width: 100%;
+    height: 40px;
+	background: url('../img/icon.png') no-repeat;
+}
+.form-padd {
+	padding: 10px;
+}
+.options {
+	background: #5f5f5f;
+	text-align: center;
+	padding: 20px 0 10px 0;
+}
+.opt-icon {
+	display: inline-block;
+    width: 30px;
+    height: 25px;
+    margin-right: 5px;
+    vertical-align: top;
+    background: url(../img/option.png) no-repeat;
+}
+.options a {
+	color: #fff;
+}
+.options a:focus, a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.option-page {
+	padding: 50px 0;
+}
+.head {
+	display: flex;
+	align-items: center;
+}

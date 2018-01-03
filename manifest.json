@@ -1,6 +1,6 @@
 {
 	"manifest_version" : 2,
-	"name": "SMS",
+	"name": "Send SMS",
 	"description": "Send SMS",
 	"version": "1.0",
 	"background": {
@@ -10,10 +10,20 @@
 		"default_icon": "img/icon.png",
 		"default_popup": "index.html"
 	},
+	"icons": {
+		"64": "img/email.png"
+	},
 	"options_page":"options.html",
 	"permissions": [
     "activeTab",
     "storage",
     "contextMenus"
+  ],
+	"content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*" ],
+      "css": ["css/style.css"],
+      "js": ["js/myscript.js"]
+    }
   ]
 }
